@@ -5,3 +5,6 @@
 
 # Local Environment Variables
 .env.local
+.next/
+node_modules/
+.env*.local
