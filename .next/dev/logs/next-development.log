@@ -1,0 +1,14 @@
+{"timestamp":"00:00:02.986","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:06.267","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:07:09.234","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
+{"timestamp":"00:08:15.231","source":"Server","level":"LOG","message":"It looks like you're trying to use TypeScript but do not have the required package(s) installed.\nInstalling dependencies\n\nIf you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your app and pages directories).\n"}
+{"timestamp":"00:08:15.240","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:08:15.241","source":"Server","level":"LOG","message":"Installing devDependencies (npm):"}
+{"timestamp":"00:08:15.241","source":"Server","level":"LOG","message":"- @types/react"}
+{"timestamp":"00:08:15.243","source":"Server","level":"LOG","message":"- @types/node"}
+{"timestamp":"00:08:15.243","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:08:17.044","source":"Server","level":"LOG","message":"✓ Compiled in 1769ms"}
+{"timestamp":"00:08:20.000","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:08:20.014","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:08:20.016","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and created a tsconfig.json file for you."}
+{"timestamp":"00:10:20.711","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
