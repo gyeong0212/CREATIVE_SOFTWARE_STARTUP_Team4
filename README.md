@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MAK Link
 
-## Getting Started
+고령층과 디지털 취약계층이 안내원에게 말하듯 열차 시간표를 찾을 수 있도록 만든 발권 안내 웹 애플리케이션입니다.
 
-First, run the development server:
+## 주요 기능
+
+- 한국어 자연어 이동 요청 분석
+- 브라우저 음성 입력
+- 공공데이터포털 열차 운행정보 조회
+- 출발 시간, 도착 시간, 이동 시간, 인원별 예상 요금 표시
+- 추천 결과 음성 안내
+- 큰 글자와 고대비 화면
+- 열차 선택 전 최종 확인
+
+## 실행 방법
+
+```bash
+npm install
+cp .env.example .env
+npm run dev
+```
+
+`.env`에 공공데이터포털 서비스 키를 입력한 뒤 실행합니다.
+
+```env
+VITE_TAGO_SERVICE_KEY=your_service_key
+```
+
+## 명령어
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run preview
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 배포
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Firebase CLI 인증과 프로젝트 설정을 마친 뒤 실행합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+firebase deploy --only hosting
+```
 
-## Learn More
+## 사용 데이터
 
-To learn more about Next.js, take a look at the following resources:
+- 공공데이터포털 국토교통부 열차 운행정보 API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+현재 버전은 시간표 안내용 시연이며 실제 좌석 예약과 결제는 진행하지 않습니다.
